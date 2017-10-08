@@ -1,0 +1,191 @@
+/* Piotr Dobrowolkski, 2017 */
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing:border-box;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  font-family:Quicksand,sans-serif;
+  font-size:15px;
+  line-height:1.5;
+  overflow-x:hidden;
+}
+
+body {
+  margin:0;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family:"Quicksand",sans-serif;
+  font-weight:400;
+  margin:10px 0;
+}
+
+h1 {
+  font-size:36px
+}
+h2 {
+  font-size:30px
+}
+h3 {
+  font-size:24px
+}
+h4 {
+  font-size:20px
+}
+h5 {
+  font-size:18px
+}
+h6 {
+  font-size:16px
+}
+
+p {
+    margin: 15px 0;
+}
+
+hr {
+  border:0;
+  border-top:1px solid #eee;
+  margin:10px 0;
+}
+
+a {
+  font-weight:inherit;
+  -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  color: inherit;
+  border-bottom: dotted 1px;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom-color: transparent;
+  color: #607d8b;
+}
+
+/* container */
+.c-content {
+  max-width:1500px;
+}
+.c-card {
+  box-shadow:0 15px 25px 0 rgba(0,0,0,0.2),0 20px 50px 0 rgba(0,0,0,0.1)!important;
+}
+.c-container {
+  padding: 15px;
+}
+@media only screen and (max-width: 470px) {
+  .c-container {
+    margin: 10px;
+  }
+}
+.c-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.c-row {
+
+}
+.c-col-11 {width: 100%;}
+.c-col-12 {width: 50%;}
+.c-col-13 {width: 33.3%;}
+.c-col-23 {width: 66.6%;}
+.c-col-14 {width: 25%;}
+.c-col-34 {width: 75%;}
+.c-col-15 {width: 20%;}
+.c-col-25 {width: 40%;}
+.c-col-35 {width: 60%;}
+.c-col-45 {width: 80%;}
+[class*="c-col-"] {
+    float: left;
+    /*border: 1px solid red;*/
+    padding: 15px;
+}
+@media only screen and (max-width: 755px) {
+    [class*="c-col-"] {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 470px) {
+  [class*="c-col-"] {
+      padding: 0;
+  }
+}
+.c-right {
+  float: right;
+}
+
+.header-img {
+  width:100%;
+}
+
+/* colors, bg */
+.color-gray {
+  color:#000!important;
+  background-color:#f5f5f5!important;
+}
+.color-white {
+  color:#000!important;
+  background-color:#ffffff!important;
+}
+
+/* text */
+.t-light-gray {
+  color:#f2f2f2!important
+}
+.t-grey {
+  color:#757575!important
+}
+.t-sand {
+  color:#fdf5e6!important
+}
+.t-blue {
+  color:#607d8b!important
+}
+.img-with-txt {
+  position:relative;
+  display:block;
+}
+
+.t-img-with-txt {
+  position:absolute;
+  left:0;
+  bottom:0;
+  padding:0.02em 15px;
+}
+
+.t-margin-h {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.t-margin-v {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.t-large {
+  font-size:20px!important;
+}
+
+.t-tiny {
+  font-size:10px!important;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-center {
+  text-align: center;
+}
