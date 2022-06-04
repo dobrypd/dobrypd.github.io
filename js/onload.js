@@ -1,4 +1,4 @@
-function minorSpamProtection(){
+function minorSpamProtection() {
   var x = document.getElementsByClassName("protectALittle");
   var i;
   for (i = 0; i < x.length; i++) {
@@ -15,17 +15,17 @@ function myOnLoad() {
   minorSpamProtection();
 }
 
-if(window.attachEvent) {
-    window.attachEvent('onload', myOnLoad);
+if (window.attachEvent) {
+  window.attachEvent('onload', myOnLoad);
 } else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function(evt) {
-            curronload(evt);
-            myOnLoad(evt);
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = myOnLoad;
-    }
+  if (window.onload) {
+    var curronload = window.onload;
+    var newonload = function (evt) {
+      curronload(evt);
+      myOnLoad(evt);
+    };
+    window.onload = newonload;
+  } else {
+    window.onload = myOnLoad;
+  }
 }

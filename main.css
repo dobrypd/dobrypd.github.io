@@ -1,4 +1,4 @@
-/* Piotr Dobrowolkski, 2017 */
+/* Piotr Dobrowolkski, 2022 */
 
 *,*:before,*:after {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 html {
   box-sizing:border-box;
-  -ms-text-size-adjust:100%;
+  text-size-adjust:100%;
   -webkit-text-size-adjust:100%;
   font-family:Quicksand,sans-serif;
   font-size:15px;
@@ -93,9 +93,6 @@ a:hover {
     content: "";
     clear: both;
     display: table;
-}
-.c-row {
-
 }
 .c-col-11 {width: 100%;}
 .c-col-12 {width: 50%;}
