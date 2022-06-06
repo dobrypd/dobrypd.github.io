@@ -18,7 +18,7 @@
   <meta name='mobile-web-app-capable' content='yes'>
   <meta name='apple-mobile-web-app-capable' content='yes'>
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="main.css" />
   <link rel="icon" type="image/x-icon" href="favicon.svg">
 </head>
@@ -38,19 +38,19 @@
             <p>Contact me:</p>
             <p><i class="fa fa-envelope fa-fw t-margin-h t-large t-blue"></i><a class="protectALittle"
                 href="mailto:pqiotqqr(qat)doqbroqqwoqlskqi(doqt)cqh"></a></p>
-            <p><i class="fa fa-linkedin fa-fw t-margin-h t-large t-blue"></i><a
+            <p><i class="fa fa-brands fa-linkedin fa-fw t-margin-h t-large t-blue"></i><a
                 href="https://www.linkedin.com/in/dobrowolskipiotr">linkedin</a></p>
-            <p><i class="fa fa-github fa-fw t-margin-h t-large t-blue"></i><a
+            <p><i class="fa fa-brands fa-github fa-fw t-margin-h t-large t-blue"></i><a
                 href="https://github.com/dobrypd">github</a></p>
           </div>
-          <div class="c-container" id="xr-button">
+          <div class="c-container" id="experience-div">
           </div>
           <hr />
           <p class="t-tiny t-light-gray t-right t-margin-h"> <a href="http://www.dobrowolski.ch">© 2022 Piotr
               Dobrowolski</a></p>
         </div>
       </div>
-      <div class="c-col-35">
+      <div class="c-col-35" id="container-scene-div" style="display:none;" >
         <div class="color-white t-grey c-card">
           <canvas class="canvas c-container" id="container-scene" width="800" height="600"></canvas>
         </div>
@@ -64,8 +64,7 @@
       "imports": {
         "three": "https://unpkg.com/three@0.141.0/build/three.module.js",
         "three/OrbitControls": "https://unpkg.com/three@0.141.0/examples/jsm/controls/OrbitControls.js",
-        "three/capabilities/WebGL": "https://unpkg.com/three@0.141.0/examples/jsm/capabilities/WebGL.js",
-        "three/webxr/VRButton" : "https://unpkg.com/three@0.141.0/examples/jsm/webxr/VRButton.js"
+        "three/capabilities/WebGL": "https://unpkg.com/three@0.141.0/examples/jsm/capabilities/WebGL.js"
       }
     }
   </script>
