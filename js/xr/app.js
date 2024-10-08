@@ -1,6 +1,4 @@
-/* Piotr Dobrowolski, 2022 */
-import WebGL from 'three/capabilities/WebGL';
-import * as THREE from 'three';
+/* Piotr Dobrowolski, 2022-2024 */
 import {animate, initializeScene} from "./experience.js"
 
 let experienceDiv = document.getElementById("experience-div");
@@ -116,8 +114,11 @@ function showXRNotAllowed(exception) {
 }
 
 function experienceAvailable() {
+    if (typeof WebGL === "undefined") {
+        return false;
+    }
     if (WebGL.isWebGLAvailable()) {
-        startExperienceBtn = createItem("fa-cube", createLink("start experience", "360", experienceClicked));
+        startExperienceBtn = createItem("fa-cube", createLink("start experience", "xr", experienceClicked));
         experienceDiv.appendChild(startExperienceBtn);
         if ("xr" in navigator) {
             navigator.xr.isSessionSupported('immersive-vr').then(function (supported) {
@@ -151,11 +152,11 @@ function registerSessionGrantedListener() {
 
 }
 
-if (window.location.hash == "#earlyAccess")
+if (window.location.hash == "#xr")
 {
     registerSessionGrantedListener();
     if (experienceAvailable()) {
-        if (window.location.hash == "#360" || window.location.hash == "#vr") {
+        if (indow.location.hash == "#xr") {
             startExperienceBtn.querySelector("a").click();
         }
     }
