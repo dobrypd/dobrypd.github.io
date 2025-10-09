@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 
+<!--
  ____________________________
 < Hi! >
  ----------------------------
@@ -12,57 +12,70 @@
 <html lang="en">
 
 <head>
-  <title>dobrowolski.ch</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name='mobile-web-app-capable' content='yes'>
-  <meta name='apple-mobile-web-app-capable' content='yes'>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link rel="stylesheet" href="main.css" />
-  <link rel="icon" type="image/x-icon" href="favicon.svg">
+  <meta name="description" content="Piotr Dobrowolski - Software Engineer Portfolio">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Piotr Dobrowolski - Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
-<body class="color-gray">
-  <div class="c-content">
-    <div class="c-row">
-      <div class="c-col-13">
-        <div class="color-white t-grey c-card">
-          <div class="img-with-txt">
-            <img class="header-img" src="PD.jpg" alt="Photo of Piotr Dobrowolski">
-            <div class="t-img-with-txt t-sand">
-              <h2>Piotr Dobrowolski</h2>
-            </div>
+<body>
+  <main class="container">
+    <article class="card">
+      <header class="card-header">
+        <div class="profile-image-wrapper">
+          <img class="profile-image" src="PD.jpg" alt="Photo of Piotr Dobrowolski" width="400" height="400">
+          <div class="profile-name">
+            <h1>Piotr Dobrowolski</h1>
           </div>
-          <div class="c-container">
-            <p><i class="fa fa-envelope fa-fw t-margin-h t-large t-blue"></i><a class="hyperlink"
-                href="mailto:piotr(at)dobrowolski(dot)ch">piotr(at)dobrowolski(dot)ch</a></p>
-            <p><i class="fa fa-brands fa-linkedin fa-fw t-margin-h t-large t-blue"></i><a
-                href="https://www.linkedin.com/in/dobrowolskipiotr">linkedin</a></p>
-            <p><i class="fa fa-brands fa-github fa-fw t-margin-h t-large t-blue"></i><a
-                href="https://github.com/dobrypd">github</a></p>
-          </div>
-          
-          <hr />
-          <p class="t-tiny t-light-gray t-right t-margin-h"> <a href="http://www.dobrowolski.ch">Piotr
-              Dobrowolski - last update: dec'24</a></p>
         </div>
-      </div>
-    </div>
-  </div>
+      </header>
 
-  <script src="js/onload.js"></script>
+      <section class="card-content">
+        <nav class="social-links" aria-label="Contact and social media">
+          <a class="social-link hyperlink" href="mailto:piotr(at)dobrowolski(dot)ch" aria-label="Email">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>piotr(at)dobrowolski(dot)ch</span>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/dobrowolskipiotr" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-link" href="https://github.com/dobrypd" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+        </nav>
+      </section>
+
+      <footer class="card-footer">
+        <p>
+          <a href="http://www.dobrowolski.ch">Piotr Dobrowolski</a>
+          <span aria-label="Last updated">· Last update: Jan '25</span>
+        </p>
+      </footer>
+    </article>
+  </main>
+
+  <script src="js/onload.js" defer></script>
   <script src="https://kit.fontawesome.com/2942a0d5ce.js" crossorigin="anonymous"></script>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-91983712-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CND63GDKFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CND63GDKFG');
+  </script>
 </body>
 
 </html>

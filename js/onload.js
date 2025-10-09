@@ -1,14 +1,24 @@
-function prepareLinks() {
-  for (var elem of document.getElementsByClassName("hyperlink")) {
-    elem.href = elem.href.replace(/q/g, '').replace('(at)', '@').replace(/\(dot\)/g, '.');
-    elem.innerHTML = elem.href.replace('mailto:', '');
-  }
-}
+const prepareLinks = () => {
+  const hyperlinks = document.querySelectorAll('.hyperlink');
 
-function myOnLoad() {
+  hyperlinks.forEach(elem => {
+    const cleanHref = elem.href
+      .replace(/q/g, '')
+      .replace('(at)', '@')
+      .replace(/\(dot\)/g, '.');
+
+    elem.href = cleanHref;
+    elem.querySelector('span').textContent = cleanHref.replace('mailto:', '');
+  });
+};
+
+const init = () => {
   prepareLinks();
-}
+};
 
-if (window.addEventListener) {
-  window.addEventListener('load', myOnLoad);
+// Modern event listener
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
 }
